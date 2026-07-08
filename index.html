@@ -1,54 +1,1689 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="nl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <meta name="description" content="Tom is a consultant with 8+ years of experience in SQL, Python, and PowerBI, 
-    helping businesses make data-driven decisions and launch successful projects.">
-  <title>Tom Bongers | Freelance Data & Analytics Consultant</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
-  <script defer src="https://cloud.umami.is/script.js" data-website-id="1c90d3a1-7033-4e43-bcbc-4dfc77ae854b"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tom Bongers | Freelance Head of Data & Insights</title>
+    <meta name="description" content="Freelance Head of Data & Insights voor duurzame scale-ups en energiebedrijven. Ik bouw data-organisaties en lever de inzichten voor betere strategische beslissingen. Gedreven door energietransitie en impact.">
+
+    <!-- Open Graph (LinkedIn, WhatsApp, Slack) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bongersconsulting.com">
+    <meta property="og:title" content="Tom Bongers | Freelance Head of Data & Insights">
+    <meta property="og:description" content="Interim & fractional data leadership voor duurzame scale-ups en energiebedrijven. Ik bouw data-organisaties en lever de inzichten voor betere beslissingen.">
+    <meta property="og:image" content="https://bongersconsulting.com/images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Tom Bongers — Freelance Head of Data & Insights, bongersconsulting.com">
+    <meta property="og:locale" content="nl_NL">
+    <meta property="og:site_name" content="Bongers Consulting">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tom Bongers | Freelance Head of Data & Insights">
+    <meta name="twitter:description" content="Interim & fractional data leadership voor duurzame scale-ups en energiebedrijven. Ik bouw data-organisaties en lever de inzichten voor betere beslissingen.">
+    <meta name="twitter:image" content="https://bongersconsulting.com/images/og-image.jpg">
+
+    <link rel="canonical" href="https://bongersconsulting.com/">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+
+    <!-- Fonts: Space Grotesk for headlines, Plus Jakarta Sans for body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Analytics (Umami) -->
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="1c90d3a1-7033-4e43-bcbc-4dfc77ae854b"></script>
+
+    <!-- Structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Tom Bongers",
+        "jobTitle": "Freelance Head of Data & Insights",
+        "url": "https://bongersconsulting.com",
+        "image": "https://bongersconsulting.com/images/profile-photo.jpg",
+        "email": "mailto:tom@bongersconsulting.com",
+        "sameAs": ["https://www.linkedin.com/in/tombongers/"],
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Bongers Consulting",
+            "url": "https://bongersconsulting.com"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Utrecht",
+            "addressCountry": "NL"
+        },
+        "areaServed": "NL",
+        "knowsAbout": ["Data Strategy", "Data Governance", "Analytics Engineering", "Business Intelligence", "Decision Intelligence", "Machine Learning", "AI Adoption", "Team Leadership", "System Dynamics", "Energy Transition", "SQL", "Python", "Snowflake", "BigQuery", "dbt", "Power BI"]
+    }
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #FAFAFA;
+            --bg-secondary: #E8F1F5;
+            --text-primary: #171717;
+            --text-secondary: #525252;
+            --accent-primary: #2B5876;
+            --accent-secondary: #4E8AAB;
+            --accent-orange: #F97316;
+            --border: #E5E5E5;
+            --white: #FFFFFF;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            font-size: 18px;
+        }
+
+        h1, h2, h3, h4, h5 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+
+        h1 {
+            font-size: clamp(36px, 5vw, 56px);
+            margin-bottom: 24px;
+        }
+
+        h2 {
+            font-size: clamp(32px, 4vw, 48px);
+            margin-bottom: 24px;
+        }
+
+        h3 {
+            font-size: clamp(24px, 3vw, 32px);
+            margin-bottom: 16px;
+        }
+
+        h4 {
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+
+        a {
+            color: var(--accent-primary);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: var(--accent-orange);
+        }
+
+        a:focus-visible,
+        button:focus-visible {
+            outline: 3px solid var(--accent-orange);
+            outline-offset: 3px;
+            border-radius: 4px;
+        }
+
+        .icon {
+            width: 1em;
+            height: 1em;
+            flex-shrink: 0;
+            vertical-align: -0.125em;
+        }
+
+        .container {
+            max-width: 1120px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        section {
+            padding: 96px 0;
+        }
+
+        /* Navigation */
+        nav {
+            position: sticky;
+            top: 0;
+            background: rgba(250, 250, 250, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+            z-index: 100;
+            padding: 20px 0;
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            font-size: 20px;
+            color: var(--text-primary);
+        }
+
+        .logo img {
+            height: 40px;
+            width: 40px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            font-weight: 500;
+            font-size: 16px;
+            transition: color 0.2s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-primary);
+        }
+
+        /* Mobile Navigation */
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+            color: var(--text-primary);
+        }
+
+        .mobile-menu-toggle .icon {
+            width: 26px;
+            height: 26px;
+            display: block;
+        }
+
+        .mobile-menu-toggle .icon-close {
+            display: none;
+        }
+
+        .mobile-menu-toggle[aria-expanded="true"] .icon-menu {
+            display: none;
+        }
+
+        .mobile-menu-toggle[aria-expanded="true"] .icon-close {
+            display: block;
+        }
+
+        .mobile-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: var(--white);
+            border-bottom: 1px solid var(--border);
+            box-shadow: 0 16px 32px rgba(0, 0, 0, 0.08);
+            padding: 8px 0 16px;
+        }
+
+        .mobile-menu.open {
+            display: block;
+        }
+
+        .mobile-menu ul {
+            list-style: none;
+        }
+
+        .mobile-menu a {
+            display: block;
+            padding: 14px 24px;
+            font-weight: 500;
+            font-size: 17px;
+            color: var(--text-primary);
+        }
+
+        .mobile-menu a:hover {
+            background: var(--bg-secondary);
+            color: var(--accent-primary);
+        }
+
+        /* Hero Section */
+        #hero {
+            padding-top: 120px;
+            padding-bottom: 120px;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 200px;
+            gap: 64px;
+            align-items: center;
+        }
+
+        .role-label {
+            display: inline-block;
+            padding: 8px 16px;
+            background: var(--accent-primary);
+            color: var(--white);
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 24px;
+        }
+
+        .hero-text .subhead {
+            font-size: 20px;
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+            line-height: 1.5;
+        }
+
+        .supporting-line {
+            font-size: 16px;
+            color: var(--text-secondary);
+            margin-top: 32px;
+            padding-left: 24px;
+            border-left: 3px solid var(--accent-primary);
+        }
+
+        .hero-image {
+            position: relative;
+        }
+
+        .hero-image img {
+            width: 200px;
+            height: 200px;
+            border-radius: 12px;
+            object-fit: cover;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+        }
+
+        .cta-buttons {
+            margin-top: 48px;
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 14px 28px;
+            border-radius: 8px;
+            font-weight: 500;
+            font-size: 16px;
+            transition: all 0.2s ease;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn .icon {
+            width: 18px;
+            height: 18px;
+        }
+
+        .btn-primary {
+            background: var(--accent-primary);
+            color: var(--white);
+            border: 2px solid var(--accent-primary);
+        }
+
+        .btn-primary:hover {
+            background: var(--white);
+            color: var(--accent-primary);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(43, 88, 118, 0.15);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--text-primary);
+            border: 2px solid var(--border);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--accent-primary);
+            color: var(--accent-primary);
+            transform: translateY(-2px);
+        }
+
+        /* Expertise Section */
+        #expertise {
+            background: var(--white);
+        }
+
+        .expertise-intro {
+            max-width: 800px;
+            margin-bottom: 64px;
+            color: var(--text-secondary);
+        }
+
+        .expertise-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 32px;
+        }
+
+        .expertise-card {
+            text-align: center;
+            padding: 32px 24px;
+            background: var(--bg-primary);
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .expertise-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+        }
+
+        .expertise-icon {
+            font-size: 48px;
+            line-height: 1;
+            margin-bottom: 16px;
+        }
+
+        .expertise-card h4 {
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        .expertise-card p {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.5;
+        }
+
+        /* Services Section */
+        #services {
+            background: var(--bg-primary);
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
+            gap: 48px;
+            margin-top: 64px;
+        }
+
+        .service-card {
+            position: relative;
+            background: var(--white);
+            padding: 40px;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+        }
+
+        .service-number {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--accent-orange);
+            margin-bottom: 16px;
+        }
+
+        .service-card h3 {
+            color: var(--text-primary);
+        }
+
+        .service-problem {
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            font-style: italic;
+        }
+
+        .service-approach {
+            margin-bottom: 16px;
+        }
+
+        .service-outcome {
+            color: var(--text-secondary);
+            font-size: 16px;
+        }
+
+        .service-outcome strong {
+            color: var(--text-primary);
+        }
+
+        /* Target Audience Section */
+        #audience {
+            background: var(--bg-secondary);
+        }
+
+        .audience-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 64px;
+            margin-top: 48px;
+        }
+
+        .recognition-list {
+            list-style: none;
+        }
+
+        .recognition-list li {
+            padding: 16px 0;
+            border-bottom: 1px solid rgba(43, 88, 118, 0.2);
+            display: flex;
+            gap: 12px;
+        }
+
+        .recognition-list li:last-child {
+            border-bottom: none;
+        }
+
+        .recognition-list .icon {
+            width: 20px;
+            height: 20px;
+            color: var(--accent-primary);
+            flex-shrink: 0;
+            margin-top: 4px;
+        }
+
+        .sectors h4 {
+            margin-top: 48px;
+            margin-bottom: 16px;
+        }
+
+        .sector-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 32px;
+        }
+
+        .tag {
+            padding: 8px 16px;
+            background: var(--white);
+            border-radius: 6px;
+            font-size: 14px;
+            color: var(--text-primary);
+            font-weight: 500;
+        }
+
+        .tech-stack {
+            margin-top: 32px;
+            padding: 24px;
+            background: var(--white);
+            border-radius: 12px;
+        }
+
+        .tech-stack h5 {
+            font-size: 16px;
+            margin-bottom: 12px;
+            color: var(--text-secondary);
+        }
+
+        .tech-stack p {
+            font-size: 15px;
+            color: var(--text-secondary);
+        }
+
+        /* Methodology Section */
+        #methodology {
+            background: var(--white);
+        }
+
+        .method-steps {
+            display: grid;
+            gap: 48px;
+            margin-top: 64px;
+        }
+
+        .method-step {
+            display: grid;
+            grid-template-columns: 80px 1fr;
+            gap: 32px;
+        }
+
+        .step-number {
+            width: 64px;
+            height: 64px;
+            border-radius: 12px;
+            background: var(--accent-primary);
+            color: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            font-size: 24px;
+        }
+
+        .step-content h3 {
+            margin-bottom: 16px;
+        }
+
+        .step-content p {
+            color: var(--text-secondary);
+            margin-bottom: 12px;
+        }
+
+        /* Cases Section */
+        #cases {
+            background: var(--bg-primary);
+        }
+
+        .case-grid {
+            display: grid;
+            gap: 48px;
+            margin-top: 64px;
+        }
+
+        .case-card {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+        }
+
+        .case-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 16px 48px rgba(0, 0, 0, 0.08);
+        }
+
+        .case-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 24px;
+            gap: 24px;
+        }
+
+        .case-title {
+            font-size: 24px;
+            color: var(--accent-primary);
+            flex: 1;
+        }
+
+        .case-role {
+            padding: 6px 12px;
+            background: var(--bg-secondary);
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--accent-primary);
+            white-space: nowrap;
+        }
+
+        .case-section {
+            margin-bottom: 24px;
+        }
+
+        .case-section:last-child {
+            margin-bottom: 0;
+        }
+
+        .case-label {
+            font-weight: 600;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+        }
+
+        .case-section p {
+            color: var(--text-secondary);
+        }
+
+        .case-section ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .case-section li {
+            padding-left: 24px;
+            position: relative;
+            margin-bottom: 8px;
+            color: var(--text-secondary);
+        }
+
+        .case-section li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--accent-primary);
+        }
+
+        .case-impact {
+            margin-top: 24px;
+            padding: 24px;
+            background: var(--bg-secondary);
+            border-radius: 8px;
+            border-left: 4px solid var(--accent-orange);
+        }
+
+        .case-impact h5 {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--text-secondary);
+            margin-bottom: 12px;
+        }
+
+        .impact-metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 16px;
+        }
+
+        .metric {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .metric-value {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--accent-primary);
+            line-height: 1;
+            margin-bottom: 4px;
+        }
+
+        .metric-label {
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+
+        /* Testimonials Section */
+        #testimonials {
+            background: var(--white);
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 32px;
+            margin-top: 64px;
+        }
+
+        .testimonial-card {
+            padding: 32px;
+            background: var(--bg-primary);
+            border-radius: 12px;
+            border: 1px solid var(--border);
+        }
+
+        .testimonial-quote {
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+        }
+
+        .author-info h5 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .author-info p {
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+
+        /* About Section */
+        #about {
+            background: var(--bg-primary);
+        }
+
+        .about-content {
+            max-width: 800px;
+            margin: 48px auto 0;
+        }
+
+        .about-content p {
+            margin-bottom: 24px;
+            color: var(--text-secondary);
+        }
+
+        .about-highlights {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            margin: 48px 0;
+        }
+
+        .highlight-item {
+            padding: 16px 24px;
+            background: var(--white);
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+
+        .highlight-item strong {
+            color: var(--accent-primary);
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .highlight-item span {
+            font-size: 15px;
+            color: var(--text-secondary);
+        }
+
+        .engagement-options {
+            margin-top: 48px;
+            padding: 32px;
+            background: var(--white);
+            border-radius: 12px;
+            border: 2px solid var(--accent-primary);
+        }
+
+        .engagement-options h4 {
+            color: var(--accent-primary);
+            margin-bottom: 16px;
+        }
+
+        .engagement-options ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .engagement-options li {
+            padding: 8px 0 8px 28px;
+            position: relative;
+            color: var(--text-secondary);
+        }
+
+        .engagement-options li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--accent-primary);
+            font-weight: bold;
+        }
+
+        /* Contact Section */
+        #contact {
+            background: var(--accent-primary);
+            color: var(--white);
+        }
+
+        #contact h2 {
+            color: var(--white);
+        }
+
+        #contact a:focus-visible {
+            outline-color: var(--white);
+        }
+
+        .contact-content {
+            text-align: center;
+            max-width: 600px;
+            margin: 48px auto 0;
+        }
+
+        .contact-methods {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            margin-top: 48px;
+            flex-wrap: wrap;
+        }
+
+        .contact-link {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px 32px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 8px;
+            color: var(--white);
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        .contact-link .icon {
+            width: 20px;
+            height: 20px;
+        }
+
+        .contact-link:hover {
+            background: var(--white);
+            color: var(--accent-primary);
+            transform: translateY(-2px);
+        }
+
+        .response-note {
+            margin-top: 32px;
+            font-size: 15px;
+            color: rgba(255, 255, 255, 0.85);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--text-primary);
+            color: var(--white);
+            padding: 48px 0;
+            text-align: center;
+        }
+
+        footer .logo-footer {
+            margin-bottom: 24px;
+        }
+
+        footer .logo-footer img {
+            height: 48px;
+            width: 48px;
+            opacity: 0.6;
+        }
+
+        footer p {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        /* Scroll reveal: content is visible by default; only hidden when JS
+           is active (html.js-enabled) and the visitor allows motion. */
+        @media (prefers-reduced-motion: no-preference) {
+            html.js-enabled .reveal {
+                opacity: 0;
+                transform: translateY(20px);
+                transition: opacity 0.6s ease, transform 0.6s ease;
+            }
+
+            html.js-enabled .reveal.is-visible {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            section {
+                padding: 64px 0;
+            }
+
+            #hero {
+                padding-top: 40px;
+                padding-bottom: 64px;
+            }
+
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 24px;
+                text-align: center;
+            }
+
+            .hero-image {
+                order: -1;
+                margin: 0 auto;
+            }
+
+            .hero-image img {
+                width: 128px;
+                height: 128px;
+            }
+
+            .role-label {
+                margin-bottom: 16px;
+            }
+
+            .hero-text .subhead {
+                font-size: 18px;
+            }
+
+            .supporting-line {
+                margin-top: 24px;
+                border-left: none;
+                border-top: 3px solid var(--accent-primary);
+                padding-left: 0;
+                padding-top: 16px;
+            }
+
+            .cta-buttons {
+                margin-top: 32px;
+            }
+
+            .audience-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+
+            .method-step {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-menu-toggle {
+                display: block;
+            }
+
+            .logo span {
+                display: none;
+            }
+
+            .logo img {
+                height: 32px;
+                width: 32px;
+            }
+
+            .case-card {
+                padding: 24px;
+            }
+
+            .case-header {
+                flex-direction: column;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .expertise-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .impact-metrics {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                font-size: 16px;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+
+            h2 {
+                font-size: 28px;
+            }
+
+            .testimonial-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <script>
+        // Mark JS as active ASAP so scroll-reveal styles only apply when JS runs.
+        document.documentElement.classList.add('js-enabled');
+    </script>
 </head>
+<body>
+    <!-- Inline SVG icon definitions (Lucide shapes, ISC license) — no CDN dependency -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+        <defs>
+            <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/></symbol>
+            <symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+            <symbol id="i-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+            <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+            <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></symbol>
+            <symbol id="i-linkedin" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 4.385v7.356zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></symbol>
+        </defs>
+    </svg>
 
-<body class="d-flex flex-column min-vh-100 bg-light text-dark">
-  <header class="d-flex justify-content-start align-items-center py-3">
-    <img src="images/bc_logo.png" alt="Logo of Bongers Consulting" class="ml-3" style="width: 50px; height: auto" />
-  </header>
-  <div class="container text-center flex-fill">
-    <img src="images/profile-photo.jpg" alt="Profile photo of Tom Bongers" class="img-fluid rounded-circle mb-3"
-      style="width: 150px; height: 150px; object-fit: cover" />
-    <h1>Tom Bongers</h1>
-    <p class="tagline text-primary lead mb-4">Freelance Data & Analytics Consultant</p>
-    <p class="intro text-secondary mb-2">Hi, I'm Tom. Nice to meet you! &#128075</p>
-    <p class="text-secondary mb-2">
-      I am a passionate and results-driven Data & Analytics Consultant with
-      over 8 years of experience, committed to driving impactful and socially
-      responsible initiatives. With my analytical expertise and organizational
-      insights, I help managers to make informed decisions, launch successful
-      projects, and build effective teams. I have experience in a variety of
-      roles, including Data Scientist, Data Architect and Product Owner, using
-      tools such as SQL, Python and PowerBI, and I worked for diverse
-      organizations like Alliander, CCV, Vandebron and ING.
-    </p>
-    <p class="text-secondary mb-4">
-      Interested in working together with me?
-    </p>
-    <a href="https://www.linkedin.com/in/tombongers/" target="_blank"
-      class="btn btn-primary d-inline-flex align-items-center" aria-label="Connect with Tom Bongers on LinkedIn" 
-      data-umami-event="linkedin-button">
-      Connect with me on
-      <img src="images/linkedin-white-logo.png" alt="LinkedIn Logo" class="ml-2"
-        style="width: 72.75px; height: 19.75px" />
-    </a>
-    <p class="contact text-secondary mt-4">
-      Or feel free to contact me at
-      <a href="mailto:tom@bongersconsulting.com" data-umami-event="email">tom@bongersconsulting.com</a>.
-    </p>
-  </div>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <a href="#hero" class="logo">
+                <img src="images/bc_logo.png" alt="Bongers Consulting logo" width="40" height="40">
+                <span>Tom Bongers</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#cases">Cases</a></li>
+                <li><a href="#about">Over mij</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" aria-label="Menu openen" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="icon icon-menu" aria-hidden="true"><use href="#i-menu"/></svg>
+                <svg class="icon icon-close" aria-hidden="true"><use href="#i-x"/></svg>
+            </button>
+        </div>
+        <div class="mobile-menu" id="mobile-menu">
+            <ul>
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#cases">Cases</a></li>
+                <li><a href="#about">Over mij</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="role-label">Freelance Head of Data &amp; Insights</div>
+                    <h1>Ik bouw data-organisaties én lever de inzichten voor betere beslissingen</h1>
+                    <p class="subhead">Voor duurzame scale-ups en energiebedrijven die kritieke transities moeten navigeren. Of dat nu het opbouwen van moderne data- en analytics-capabilities is, het leiden van data-teams tijdens groei of leiderschapswissels, of het vertalen van data naar strategische keuzes. Het doel is altijd hetzelfde: betere beslissingen, sneller.</p>
+                    <p class="supporting-line">10+ jaar ervaring in data &amp; analytics leadership — als interim manager, fractional lead en hands-on consultant. Gegrond in System Dynamics (MSc, Cum Laude). Gedreven door het versnellen van de energietransitie en bredere duurzaamheidsuitdagingen.</p>
+                    <div class="cta-buttons">
+                        <a href="#expertise" class="btn btn-primary">
+                            Bekijk wat ik doe
+                            <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+                        </a>
+                        <a href="mailto:tom@bongersconsulting.com" class="btn btn-secondary" data-umami-event="email">
+                            <svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>
+                            Stuur een email
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="images/profile-photo.jpg" alt="Portretfoto van Tom Bongers" width="200" height="200" loading="eager" fetchpriority="high">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="expertise">
+        <div class="container">
+            <h2>Expertise als Freelance Head of Data &amp; Insights</h2>
+            <p class="expertise-intro">Data en inzichten zijn tools, geen einddoel. Het einddoel is impact: organisaties helpen groeien zonder hun missie te verliezen, schalen zonder chaos te creëren, en beslissingen nemen die over de tijd cumuleren. Dit zijn de zes pijlers waar ik mee werk:</p>
+
+            <div class="expertise-grid">
+                <div class="expertise-card reveal">
+                    <div class="expertise-icon">📋</div>
+                    <h4>Data Strategie</h4>
+                    <p>Visie, roadmaps, portfolio-keuzes, prioritering</p>
+                </div>
+
+                <div class="expertise-card reveal">
+                    <div class="expertise-icon">👥</div>
+                    <h4>Team &amp; Leiderschap</h4>
+                    <p>Interim leadership, hiring, coaching, 100+ mensen getraind</p>
+                </div>
+
+                <div class="expertise-card reveal">
+                    <div class="expertise-icon">📊</div>
+                    <h4>Analytics &amp; BI</h4>
+                    <p>KPI-frameworks, dashboards, self-service analytics</p>
+                </div>
+
+                <div class="expertise-card reveal">
+                    <div class="expertise-icon">🏗️</div>
+                    <h4>Platform &amp; Architectuur</h4>
+                    <p>Modern data stack, migraties, tooling, integraties</p>
+                </div>
+
+                <div class="expertise-card reveal">
+                    <div class="expertise-icon">✅</div>
+                    <h4>Governance &amp; Quality</h4>
+                    <p>Definities, ownership, data policies, KPI's</p>
+                </div>
+
+                <div class="expertise-card reveal">
+                    <div class="expertise-icon">🧭</div>
+                    <h4>Decision Intelligence &amp; AI</h4>
+                    <p>Forecasting, scenario-analyses, machine learning, AI-adoptie</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <h2>Hoe ik data-organisaties én datagedreven strategie aanpak</h2>
+            <div class="service-grid">
+                <div class="service-card reveal">
+                    <div class="service-number">01</div>
+                    <h3>Data Strategie &amp; Governance</h3>
+                    <p class="service-problem">Je hebt data, maar geen visie. Elke afdeling doet z'n ding, er is geen eigenaarschap, geen prioriteiten. Management weet niet waar data aan bijdraagt.</p>
+                    <p class="service-approach"><strong>Wat ik doe:</strong> Ik ontwikkel datastrategie, governance frameworks en roadmaps die aansluiten bij business-doelen. Van begrippenkaders en data quality KPI's tot ownership-modellen en besluitvormingsprocessen. Als freelance Head of Data &amp; Insights vertaal ik business-ambities naar concrete data-initiatieven met meetbare impact.</p>
+                    <p class="service-outcome"><strong>Wat je krijgt:</strong> Heldere koers voor 1-3 jaar. Management weet waar data aan bijdraagt. Teams weten wat van hen verwacht wordt. Betrouwbare stuurinformatie voor directie.</p>
+                </div>
+
+                <div class="service-card reveal">
+                    <div class="service-number">02</div>
+                    <h3>Team &amp; Analytics Capability</h3>
+                    <p class="service-problem">Je hebt 1-2 data mensen, maar ze komen niet uit ad-hoc werk. Junior analisten durven geen queries te schrijven. Je kunt niet schalen en overweegt je eerste Head of Data aan te nemen. Of je data-lead valt (tijdelijk) weg en je wilt geen momentum verliezen.</p>
+                    <p class="service-approach"><strong>Wat ik doe:</strong> Ik bouw en leid analytics-teams: hiring, onboarding, skill development, operating model en delivery-routines. Ik heb teams van 5→12 FTE geleid en 100+ mensen getraind — van SQL en Python fundamentals tot data-driven decision making en decision intelligence. Ik zet KPI-frameworks neer, implementeer self-service BI, en help je eerste permanente Head of Data succesvol te laten zijn. Ook beschikbaar als fractional Head of Data / CDO (2-3 dagen per week) voor organisaties die nog geen fulltime data-leader nodig hebben.</p>
+                    <p class="service-outcome"><strong>Wat je krijgt:</strong> Een team dat zelfstandig kan draaien. Geen dependency op externe consultants. Schaalbare analytics capability. Management dat vertrouwt op dashboards en analyses.</p>
+                </div>
+
+                <div class="service-card reveal">
+                    <div class="service-number">03</div>
+                    <h3>Platform &amp; Architectuur</h3>
+                    <p class="service-problem">Je legacy systemen worden vervangen, of je fuseert meerdere datasources. Migraties falen vaak omdat techniek en organisatie los van elkaar worden aangepakt.</p>
+                    <p class="service-approach"><strong>Wat ik doe:</strong> Ik ontwerp enterprise datamodellen en begeleid de volledige migratie — van gap-analyse en directiepresentaties tot hands-on SQL migratiescripts en teambegeleiding. Als freelance Head of Data &amp; Insights stuur ik ook de keuzes aan rondom build vs buy, tooling (Snowflake, BigQuery, dbt, Kraken, SAP), en vendor selection. Ik werk met stakeholders op alle niveaus: van architecten tot eindgebruikers.</p>
+                    <p class="service-outcome"><strong>Wat je krijgt:</strong> Migraties die op tijd opleveren én gedragen worden. Data quality frameworks die fouten significant reduceren. Teams die het nieuwe systeem écht snappen en gebruiken. Schaalbare infrastructuur.</p>
+                </div>
+
+                <div class="service-card reveal">
+                    <div class="service-number">04</div>
+                    <h3>Strategie &amp; Insights</h3>
+                    <p class="service-problem">Je staat voor een kritieke strategische transitie (nieuwe markt, product pivot, propositie-ontwikkeling, ERP migratie) maar mist de inzichten én de lead om die beslissingen te dragen. Beslissingen moeten snel, maar mogen niet fout.</p>
+                    <p class="service-approach"><strong>Wat ik doe:</strong> Als interim strategie-lead met een data-achtergrond lever ik strategische beslissingen onder strakke timelines — altijd insights-gedreven: eerst de analyse (pricing, segmentatie, unit economics, forecasts), dan de keuze. Van propositie-ontwikkeling en business cases tot go/no-go frameworks en implementatie-roadmaps. Ik leid cross-functionele teams (Product, Tech, Finance, Commercial, Data) en zorg dat exec teams decision-ready aanbevelingen krijgen — niet 50-slide decks. Ik redesign team-structuren waar nodig en borg continuïteit voor clean handoff.</p>
+                    <p class="service-outcome"><strong>Wat je krijgt:</strong> Strategische beslissing met heldere trade-offs, meetbare business case en implementeerbare roadmap. Team dat autonoom door kan na mijn vertrek. Voorbeelden: propositie-ontwikkeling tijdens marktshift (energie), pricing &amp; segmentatie, team-transformatie.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Audience Section -->
+    <section id="audience">
+        <div class="container">
+            <h2>Voor wie?</h2>
+            <div class="audience-grid">
+                <div class="recognition">
+                    <h3>Je herkent jezelf als:</h3>
+                    <ul class="recognition-list">
+                        <li>
+                            <svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>
+                            <span>Duurzame scale-up of energiebedrijf (50-500 medewerkers)</span>
+                        </li>
+                        <li>
+                            <svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>
+                            <span>Je data- of insights-lead is (tijdelijk) weg en je wilt geen momentum verliezen — je zoekt interim leadership voor 6+ maanden</span>
+                        </li>
+                        <li>
+                            <svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>
+                            <span>Je groeit snel, data groeit sneller — maar er is geen strategie of governance</span>
+                        </li>
+                        <li>
+                            <svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>
+                            <span>Je hebt 1-3 data mensen, maar ze verdrinken in ad-hoc vragen en brandjes blussen</span>
+                        </li>
+                        <li>
+                            <svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>
+                            <span>Je overweegt je eerste Head of Data / Head of Data &amp; Insights / CDO aan te nemen, maar weet niet of je daar al groot genoeg voor bent</span>
+                        </li>
+                        <li>
+                            <svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>
+                            <span>Je staat voor een grote migratie (ERP/CRM zoals Kraken, SAP) of data platform implementatie</span>
+                        </li>
+                        <li>
+                            <svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>
+                            <span>Je staat voor een strategische transitie (marktshift, nieuwe proposities) en hebt inzichten nodig om de juiste keuzes te maken</span>
+                        </li>
+                        <li>
+                            <svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>
+                            <span>Je wilt aan de slag met AI, maar mist het datafundament en iemand die adoptie begeleidt</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="sectors">
+                    <h3>Sectoren waar ik ervaring heb:</h3>
+                    <div class="sector-tags">
+                        <span class="tag">Energie &amp; Utilities</span>
+                        <span class="tag">Klimaat Tech</span>
+                        <span class="tag">Duurzame Finance</span>
+                        <span class="tag">Impact Scale-ups</span>
+                    </div>
+                    <p style="color: var(--text-secondary); margin-top: 16px;"><strong>Concrete voorbeelden:</strong> Energiehandel en forecasting (Vandebron), netbeheer en asset management (Alliander), ESG reporting en carbon accounting, impact measurement, betalingsverkeer (ING, CCV), B2B SaaS analytics (Traxl).</p>
+
+                    <div class="tech-stack">
+                        <h5>Tech Stack</h5>
+                        <p>SQL (expert), Python (gevorderd), Snowflake, GCP/BigQuery, Azure, Power BI (DAX), Looker, dbt-style modelling, Matillion, Airflow, scikit-learn &amp; Prophet (forecasting), Docker/K8s, CI/CD, Kraken, SAP S/4HANA &amp; SAP C4C, Salesforce, Git</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Methodology Section -->
+    <section id="methodology">
+        <div class="container">
+            <h2>Hoe ik werk</h2>
+            <p style="max-width: 800px; color: var(--text-secondary); margin-bottom: 32px;">Mijn fundament is <strong>System Dynamics</strong> (MSc, Cum Laude) — dat leerde me om patronen, feedback loops en onbedoelde consequenties te zien die anderen missen. Die bril gebruik ik in elk project: begrijp het systeem eerst, grijp dan slim in.</p>
+            <p style="max-width: 800px; color: var(--text-secondary); margin-bottom: 32px;">Of ik nu een team leid, een dataplatform bouw of nieuwe business-proposities ontwerp, ik focus op drie dingen:</p>
+            <div class="method-steps">
+                <div class="method-step reveal">
+                    <div class="step-number" aria-hidden="true">1</div>
+                    <div class="step-content">
+                        <h3>Deliver something that works</h3>
+                        <p>Niet iets dat mooi is op papier, maar iets dat daadwerkelijk waarde levert in de praktijk. Ik werk hands-on: van SQL migratiescripts tot het inrichten van Snowflake, van KPI-frameworks tot go/no-go beslissingen.</p>
+                        <p>Code die ik schrijf volgt software engineering principes: DRY, testbaar, gedocumenteerd. Strategieën die ik opstel zijn implementeerbaar, met duidelijke trade-offs. Geen quick-fixes die over 6 maanden legacy zijn.</p>
+                    </div>
+                </div>
+
+                <div class="method-step reveal">
+                    <div class="step-number" aria-hidden="true">2</div>
+                    <div class="step-content">
+                        <h3>Build for continuity</h3>
+                        <p>Teams moeten zelfstandig door kunnen nadat ik vertrek. Geen afhankelijkheid creëren van een externe consultant.</p>
+                        <p>Dat betekent: data governance die niet bureaucratisch is, hiring en onboarding van je eerste data engineers, kennisoverdracht en coaching. Bij team-transformaties redesign ik rollen en samenwerkingsmodellen zodat de structuur staat, niet alleen de mensen.</p>
+                    </div>
+                </div>
+
+                <div class="method-step reveal">
+                    <div class="step-number" aria-hidden="true">3</div>
+                    <div class="step-content">
+                        <h3>Land the change</h3>
+                        <p>Transformaties slagen of mislukken op adoptie, niet op technologie. De beste data-architectuur helpt niets als niemand hem gebruikt. De mooiste strategie werkt niet als het team er niet achter staat.</p>
+                        <p>Ik heb 100+ mensen getraind in datagedreven werken — van SQL en Python fundamentals tot governance workshops voor management. Ik betrek stakeholders vroeg, documenteer beslissingen, en zorg dat verandering verankerd raakt in de organisatie.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cases Section -->
+    <section id="cases">
+        <div class="container">
+            <h2>Cases</h2>
+            <div class="case-grid">
+                <div class="case-card reveal" style="border-left: 4px solid var(--accent-primary);">
+                    <div class="case-header">
+                        <h3 class="case-title">Energiebedrijf — Strategische Propositie-ontwikkeling &amp; Team-transformatie</h3>
+                        <div class="case-role">Interim Head of Strategy (freelance)</div>
+                    </div>
+
+                    <div class="case-section">
+                        <div class="case-label">Context &amp; Opdracht</div>
+                        <p>Energiebedrijf (200+ FTE) stond voor fundamentele marktshift: afschaffing salderingsregeling in 2027. Zonder nieuwe flexibele klantcontracten risico op €16M+ gederfde toekomstige inkomsten. Initiële opdracht: nieuwe energie-proposities ontwerpen. Na succes verlengd voor volledige team-transformatie en bredere strategie-uitvoering — parallel aan organisatiebrede ERP-migratie (Kraken).</p>
+                    </div>
+
+                    <div class="case-section">
+                        <div class="case-label">Mijn Rol &amp; Aanpak</div>
+                        <p>Als interim Head of Strategy leid ik het consumer strategy team (business insights, pricing &amp; program management) — een sterk analytics-gedreven rol: inzichten bepalen de strategie. Ik lever strategische beslissingen én organisatie-verandering:</p>
+                        <ul>
+                            <li><strong>Team stabiliseren &amp; momentum creëren:</strong> Operating model en delivery-routines neergezet, KPI-framework (decision adoption, milestone hit-rate), heldere decision rights — team had geen strategie-reboot nodig maar wél richting</li>
+                            <li><strong>Strategische propositie-ontwikkeling:</strong> Cross-functionele analyse (Strategy, Product, Tech, Pricing, Data) voor nieuwe datagedreven proposities: pricing structures, customer segments, unit economics, technical feasibility in Kraken</li>
+                            <li><strong>Go/no-go decision framework:</strong> Decision-ready aanbeveling met zichtbare trade-offs voor exec team — geen 50-slide deck, maar heldere keuze met €16M+ business case</li>
+                            <li><strong>Volledige team redesign:</strong> Propositie-marketeers uit team gehaald, programma management toegevoegd, nieuwe functie Business Strategy &amp; Insights opgezet. Samenwerkingsmodel met andere teams (Product, Tech, Commercial) geherdefinieerd</li>
+                            <li><strong>Continuïteit borgen:</strong> Alle beslissingen gedocumenteerd, nieuwe teamleden onboarded en gecoacht, rolling kwartaalcyclus voor strategie en planning ingericht</li>
+                        </ul>
+                    </div>
+
+                    <div class="case-impact">
+                        <h5>Business Impact</h5>
+                        <div class="impact-metrics">
+                            <div class="metric">
+                                <div class="metric-value">€16M+</div>
+                                <div class="metric-label">Unlocked future earnings</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric-value">8+ mnd</div>
+                                <div class="metric-label">Interim periode</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric-value">100%</div>
+                                <div class="metric-label">Continuïteit geborgd</div>
+                            </div>
+                        </div>
+                        <p style="margin-top: 16px; color: var(--text-secondary); font-size: 15px;">Heldere implementatie-roadmap voor flexibele contracten (2027 launch). Getransformeerd team met nieuwe rollen en samenwerkingsmodel, klaar om autonoom te opereren.</p>
+                    </div>
+                </div>
+
+                <div class="case-card reveal">
+                    <div class="case-header">
+                        <h3 class="case-title">Energiebedrijf — Data Analytics Team: van Ad-hoc naar Center of Excellence</h3>
+                        <div class="case-role">Manager Data Analytics</div>
+                    </div>
+
+                    <div class="case-section">
+                        <div class="case-label">Context &amp; Probleem</div>
+                        <p>Energiebedrijf in snelle groei (20→200 FTE in 4 jaar, 2018-2022). Data analytics team bestond uit 5 FTE die vooral ad-hoc vragen beantwoordden. Voorspellende modellen voor energieverbruik gaven inconsistente resultaten. Trading team vertrouwde de output niet en viel terug op intuïtie. Management wilde data-driven werken maar had geen vertrouwen in de cijfers.</p>
+                    </div>
+
+                    <div class="case-section">
+                        <div class="case-label">Mijn Rol &amp; Aanpak</div>
+                        <p>Als Manager Data Analytics leidde ik het multidisciplinaire team (opgeschaald van 5 naar 12 FTE, gecoacht van junior tot lead) en vertaalde bedrijfsstrategie naar concrete data-initiatieven:</p>
+                        <ul>
+                            <li>Data model redesign: van 20+ losse pipelines naar gestructureerd warehouse (Azure Data Services)</li>
+                            <li>Voorspellende modellen voor energieverbruik gebouwd (Python, Docker, K8s) met retraining pipeline</li>
+                            <li>KPI-frameworks en dashboards ontworpen voor commerciële en strategische besluitvorming (Power BI, R Shiny)</li>
+                            <li>Automated quality checks met alerts, team training in model interpretatie</li>
+                            <li>Agile werken opgeschaald naar organisatiebreed niveau, samenwerking tussen data, finance en commercie versterkt</li>
+                            <li>100+ medewerkers getraind in datagedreven besluitvorming</li>
+                        </ul>
+                    </div>
+
+                    <div class="case-impact">
+                        <h5>Business Impact</h5>
+                        <div class="impact-metrics">
+                            <div class="metric">
+                                <div class="metric-value">15%</div>
+                                <div class="metric-label">Omzetgroei</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric-value">8%</div>
+                                <div class="metric-label">Minder churn</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric-value">€500K+</div>
+                                <div class="metric-label">Kostenbesparingen</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric-value">5→12</div>
+                                <div class="metric-label">Team FTE</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-card reveal">
+                    <div class="case-header">
+                        <h3 class="case-title">Netwerkbeheerder — Enterprise Data Migratie &amp; Governance</h3>
+                        <div class="case-role">Data Consultant / Architect</div>
+                    </div>
+
+                    <div class="case-section">
+                        <div class="case-label">Context &amp; Probleem</div>
+                        <p>Grote Nederlandse netwerkbeheerder met 15+ legacy systemen zonder centrale definitie van kernconcepten (klant, aansluiting, asset). Directie wilde migreren naar SAP CX en moderne data-architectuur, maar niemand wist waar te beginnen. Klantdata bevatte dubbele records en inconsistenties die operationele processen blokkeerden.</p>
+                    </div>
+
+                    <div class="case-section">
+                        <div class="case-label">Mijn Rol &amp; Aanpak</div>
+                        <p>Als Data Consultant / Architect leidde ik de datafundament-workstream:</p>
+                        <ul>
+                            <li>Enterprise klantdatamodel opgesteld (100+ concepten, relaties, afhankelijkheden) met behulp van enterprise architectuur tools</li>
+                            <li>Gap-analyse tussen huidige staat en SAP CX doelarchitectuur</li>
+                            <li>Business case en migratie-roadmap gepresenteerd aan directieniveau</li>
+                            <li>Data governance framework ontworpen: praktisch, niet bureaucratisch — ownership modellen, definitiekaders, quality KPI's, privacy-by-design</li>
+                            <li>Ontdubbeltool en MDM features gebouwd (hands-on development)</li>
+                            <li>Workshops met 50+ stakeholders gefaciliteerd om adoptie te verankeren</li>
+                        </ul>
+                    </div>
+
+                    <div class="case-impact">
+                        <h5>Business Impact</h5>
+                        <div class="impact-metrics">
+                            <div class="metric">
+                                <div class="metric-value">70%</div>
+                                <div class="metric-label">Minder datafouten</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric-value">50+</div>
+                                <div class="metric-label">Stakeholders aligned</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric-value">100+</div>
+                                <div class="metric-label">Dataconcepten gemodelleerd</div>
+                            </div>
+                        </div>
+                        <p style="margin-top: 16px; color: var(--text-secondary); font-size: 15px;">Heldere migratiestrategie breed gedragen. Management kreeg voor het eerst betrouwbare stuurinformatie over asset management en netinvesteringen.</p>
+                    </div>
+                </div>
+
+                <div class="case-card reveal">
+                    <div class="case-header">
+                        <h3 class="case-title">B2B SaaS Platform — Analytics Capability van 0 naar Schaalbaar</h3>
+                        <div class="case-role">Interim Head of Data (freelance)</div>
+                    </div>
+
+                    <div class="case-section">
+                        <div class="case-label">Context &amp; Probleem</div>
+                        <p>Snelgroeiende B2B SaaS scale-up zonder gecentraliseerde data-infrastructuur. Elke analist schreef eigen SQL queries zonder versioning of code reviews. Definities van kernmetrics (zoals "active user") verschilden per dashboard. Junior analisten durfden geen queries te schrijven uit angst iets kapot te maken. Management had geen vertrouwen in rapportages.</p>
+                    </div>
+
+                    <div class="case-section">
+                        <div class="case-label">Mijn Rol &amp; Aanpak</div>
+                        <p>Als interim Head of Data bouwde ik de volledige analytics-functie op:</p>
+                        <ul>
+                            <li>GCP data warehouse (BigQuery) en BI-stack (Power BI, Looker) opgezet met moderne data engineering practices</li>
+                            <li>dbt-style framework geïmplementeerd: "single source of truth" datamodellen, code reviews, CI/CD pipeline</li>
+                            <li>Price-forecasting modellen ontwikkeld (Python, scikit-learn) met automated pipelines en monitoring</li>
+                            <li>KPI-framework afgestemd met management, engineering en commercial teams</li>
+                            <li>SQL training ontwikkeld en gegeven aan 20+ mensen (Fundamentals + Advanced)</li>
+                            <li>Agile werkwijze en metrics-driven culture geïntroduceerd; 3 data engineers gerekruteerd en onboarded</li>
+                        </ul>
+                    </div>
+
+                    <div class="case-impact">
+                        <h5>Business Impact</h5>
+                        <div class="impact-metrics">
+                            <div class="metric">
+                                <div class="metric-value">60%</div>
+                                <div class="metric-label">Sneller analyses</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric-value">80%</div>
+                                <div class="metric-label">Dashboard adoptie</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric-value">6 mnd</div>
+                                <div class="metric-label">Van 0 naar volwassen capability</div>
+                            </div>
+                        </div>
+                        <p style="margin-top: 16px; color: var(--text-secondary); font-size: 15px;">Junior analisten nu zelfstandig. Management dashboards leidend in strategic reviews. Team kan schalen zonder externe afhankelijkheid.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <div class="container">
+            <h2>Wat anderen zeggen</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card reveal">
+                    <p class="testimonial-quote">"Tom is a natural leader with a great talent for technology and data. During our time together at Vandebron he was instrumental in delivering the successful transformation of our Data Analytics team from ad-hoc reporting towards a Center-of-Excellence model. He's an evangelist for data-driven decision making and decision intelligence. Tom is able to transmit ambition and drive not just to a team, but to a whole company!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h5>Giuseppe Procaccianti</h5>
+                            <p>Data Science Manager, Dexter Energy (former Vandebron)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card reveal">
+                    <p class="testimonial-quote">"Tom heeft bij Alliander een indrukwekkende bijdrage geleverd aan het verbeteren van onze klantdata en het optimaliseren van SAP CX. Als kartrekker van Master Data Governance zorgde Tom voor richting, voortgang en kwaliteit, en wist hij complexe vraagstukken om te zetten in praktische oplossingen. Tom vond zelfstandig zijn weg in onze grote, complexe organisatie en werkte soepel samen met diverse teams en stakeholders."</p>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h5>Bart Vink</h5>
+                            <p>Vakgroepleider, Alliander</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card reveal">
+                    <p class="testimonial-quote">"Working with Tom is such a pleasure. I've been lucky to work with him both as a direct colleague as well as my manager. In both roles he excelled, due to his intelligence, hard skills and emotional sensitivity. Tom is precise and delivers high quality, while at the same time he does not lose track of the greater purpose of his work. He's an all-rounder who seems to be able to master any skill, and who consistently impresses anyone around him."</p>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h5>Dane Linssen, MSc</h5>
+                            <p>Market Data Engineer at Dexter (former team member Vandebron)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>Over mij</h2>
+            <div class="about-content">
+                <p>Ik bouw data-organisaties én lever de inzichten waarmee duurzame scale-ups en energiebedrijven betere strategische beslissingen nemen. Mijn werk zit op het snijvlak van data, strategie en impact.</p>
+
+                <p>Ik help organisaties kritieke transities navigeren — of dat nu het opbouwen van moderne data- en analytics-capabilities is, het leiden van data-teams tijdens groei of leiderschapswissels, of het vertalen van data naar strategische keuzes. Het doel is altijd hetzelfde: <strong>betere beslissingen, sneller</strong>.</p>
+
+                <h3 style="margin-top: 40px; margin-bottom: 16px;">🌱 Wat mij drijft</h3>
+                <p>Ik ben gemotiveerd door het versnellen van de energietransitie en bredere duurzaamheidsuitdagingen. Daarom werk ik primair met energiebedrijven, climate tech scale-ups en impact-gedreven organisaties. Het is ook waarom ik via <strong>Carbon Equity</strong> investeer in doorbraak-technologieën voor klimaatoplossingen — kapitaal achter de technologieën die we nodig hebben om de klimaatcrisis op te lossen.</p>
+
+                <p>Data en inzichten zijn tools, geen einddoel. Het einddoel is impact: organisaties helpen groeien zonder hun missie te verliezen, schalen zonder chaos te creëren, en beslissingen nemen die over de tijd cumuleren.</p>
+
+                <h3 style="margin-top: 40px; margin-bottom: 16px;">🔄 Achtergrond</h3>
+                <p>Ik heb <strong>10+ jaar ervaring</strong> in data &amp; analytics leadership: multidisciplinaire teams bouwen en leiden (analytics, engineering, data science), mensen coachen van junior tot lead, en datastrategie afstemmen met executive en board-level stakeholders. Mijn fundament is <strong>System Dynamics</strong> (MSc, Cum Laude) — dat leerde me om patronen, feedback loops en onbedoelde consequenties te zien die anderen missen. Die bril gebruik ik in elk project: begrijp het systeem eerst, grijp dan slim in.</p>
+
+                <p>Ervaring opgedaan bij onder meer <strong>Vandebron</strong> (Manager Data Analytics én interim Head of Strategy — een sterk insights-gedreven rol: business insights, pricing &amp; program management), <strong>Alliander</strong> (Data Architect &amp; Governance Lead), <strong>Traxl</strong> (interim Head of Data), <strong>CCV</strong> (Data Analytics Lead), en diverse B2B SaaS scale-ups.</p>
+
+                <div class="about-highlights">
+                    <div class="highlight-item">
+                        <strong>10+ jaar</strong>
+                        <span>data &amp; analytics leadership</span>
+                    </div>
+                    <div class="highlight-item">
+                        <strong>System Dynamics</strong>
+                        <span>MSc, Cum Laude</span>
+                    </div>
+                    <div class="highlight-item">
+                        <strong>100+ mensen</strong>
+                        <span>getraind in SQL, Python &amp; decision making</span>
+                    </div>
+                    <div class="highlight-item">
+                        <strong>Carbon Equity</strong>
+                        <span>Climate Tech Investor</span>
+                    </div>
+                </div>
+
+                <div class="engagement-options">
+                    <h4>Samenwerkingsmogelijkheden</h4>
+                    <ul>
+                        <li><strong>Interim Head of Data &amp; Insights</strong> — Voor leiderschapsgaps en kritieke transities: data-organisatie opbouw, team-transformatie, insights-gedreven strategie (typisch 6+ maanden)</li>
+                        <li><strong>Fractional Head of Data / CDO</strong> — 2-3 dagen per week voor organisaties die nog geen fulltime data-leader nodig hebben</li>
+                        <li><strong>Data &amp; AI Advisory</strong> — Kortere trajecten om roadmap, governance framework, migratiestrategie of AI-adoptie neer te zetten</li>
+                        <li><strong>Training &amp; Coaching</strong> — Van SQL en Python fundamentals tot data-driven decision making en decision intelligence (gemiddelde score 9,2/10, 100+ mensen getraind)</li>
+                    </ul>
+                </div>
+
+                <p style="margin-top: 40px;"><strong>Persoonlijk:</strong> Getrouwd, vader van een jong kind, gebaseerd in Utrecht. Buiten werk: trail running, impactbeleggen, en deep-dives in besliskunde en energietransitie.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2>Interesse om samen te werken?</h2>
+                <p style="color: rgba(255,255,255,0.9); margin-bottom: 0;">Of ken je een organisatie die een interim of fractional data-leader zoekt — Head of Data &amp; Insights, fractional CDO — voor een kritieke transitie?</p>
+                <div class="contact-methods">
+                    <a href="mailto:tom@bongersconsulting.com" class="contact-link" data-umami-event="email">
+                        <svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>
+                        tom@bongersconsulting.com
+                    </a>
+                    <a href="https://www.linkedin.com/in/tombongers/" target="_blank" rel="noopener noreferrer" class="contact-link" data-umami-event="linkedin-button">
+                        <svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg>
+                        LinkedIn
+                    </a>
+                </div>
+                <p class="response-note">(Ik reageer meestal binnen 24 uur)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="logo-footer">
+                <img src="images/bc_logo.png" alt="Bongers Consulting logo" width="48" height="48" loading="lazy">
+            </div>
+            <p>&copy; <span id="copyright-year">2026</span> Bongers Consulting | KVK: 86684272</p>
+        </div>
+    </footer>
+
+    <script>
+        // Dynamic copyright year (falls back to hardcoded 2026 without JS)
+        document.getElementById('copyright-year').textContent = new Date().getFullYear();
+
+        // Mobile menu: toggle, Esc, click-outside, close on link click
+        (function () {
+            var toggle = document.querySelector('.mobile-menu-toggle');
+            var menu = document.getElementById('mobile-menu');
+
+            function setOpen(open) {
+                menu.classList.toggle('open', open);
+                toggle.setAttribute('aria-expanded', String(open));
+                toggle.setAttribute('aria-label', open ? 'Menu sluiten' : 'Menu openen');
+            }
+
+            toggle.addEventListener('click', function (e) {
+                e.stopPropagation();
+                setOpen(!menu.classList.contains('open'));
+            });
+
+            menu.querySelectorAll('a').forEach(function (link) {
+                link.addEventListener('click', function () { setOpen(false); });
+            });
+
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape' && menu.classList.contains('open')) {
+                    setOpen(false);
+                    toggle.focus();
+                }
+            });
+
+            document.addEventListener('click', function (e) {
+                if (menu.classList.contains('open') && !menu.contains(e.target) && !toggle.contains(e.target)) {
+                    setOpen(false);
+                }
+            });
+        })();
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+            anchor.addEventListener('click', function (e) {
+                var target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Scroll-reveal animations. Content is visible by default (CSS only
+        // hides .reveal under html.js-enabled + motion allowed), so a JS or
+        // IntersectionObserver failure never leaves the page blank.
+        (function () {
+            var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            var elements = document.querySelectorAll('.reveal');
+
+            if (reduceMotion || !('IntersectionObserver' in window)) {
+                elements.forEach(function (el) { el.classList.add('is-visible'); });
+                return;
+            }
+
+            var observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1, rootMargin: '0px 0px -100px 0px' });
+
+            elements.forEach(function (el) { observer.observe(el); });
+        })();
+    </script>
 </body>
-
 </html>

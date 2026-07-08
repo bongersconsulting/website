@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina niet gevonden | Bongers Consulting</title>
+    <meta name="robots" content="noindex">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #FAFAFA;
+            --text-primary: #171717;
+            --text-secondary: #525252;
+            --accent-primary: #2B5876;
+            --white: #FFFFFF;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            font-size: 18px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 24px;
+        }
+
+        img.logo {
+            width: 64px;
+            height: 64px;
+            margin-bottom: 32px;
+        }
+
+        h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(32px, 5vw, 48px);
+            margin-bottom: 16px;
+        }
+
+        p {
+            color: var(--text-secondary);
+            max-width: 480px;
+            margin-bottom: 32px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 28px;
+            border-radius: 8px;
+            font-weight: 500;
+            font-size: 16px;
+            background: var(--accent-primary);
+            color: var(--white);
+            border: 2px solid var(--accent-primary);
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .btn:hover {
+            background: var(--white);
+            color: var(--accent-primary);
+        }
+
+        .btn:focus-visible {
+            outline: 3px solid #F97316;
+            outline-offset: 3px;
+        }
+    </style>
+</head>
+<body>
+    <img class="logo" src="/images/bc_logo.png" alt="Bongers Consulting logo" width="64" height="64">
+    <h1>404 — Pagina niet gevonden</h1>
+    <p>Deze pagina bestaat niet (meer). Geen zorgen: alles wat je zoekt staat op de homepage.</p>
+    <a class="btn" href="/">Terug naar de homepage</a>
+</body>
+</html>
