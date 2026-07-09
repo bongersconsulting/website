@@ -1,3 +1,4 @@
 User-agent: *
 Disallow:
-Sitemap: https://www.bongersconsulting.com/sitemap.xml
+
+Sitemap: https://bongersconsulting.com/sitemap.xml
