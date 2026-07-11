@@ -3,14 +3,14 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://bongersconsulting.com/</loc>
-    <lastmod>2026-07-09</lastmod>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://bongersconsulting.com/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bongersconsulting.com/en.html"/>
+    <lastmod>2026-07-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bongersconsulting.com/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bongersconsulting.com/nl.html"/>
   </url>
   <url>
-    <loc>https://bongersconsulting.com/en.html</loc>
-    <lastmod>2026-07-09</lastmod>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://bongersconsulting.com/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bongersconsulting.com/en.html"/>
+    <loc>https://bongersconsulting.com/nl.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bongersconsulting.com/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://bongersconsulting.com/nl.html"/>
   </url>
 </urlset>
