@@ -615,46 +615,6 @@ details[open] > summary .exp-chevron {
     color: var(--text-secondary);
 }
 
-/* Methodology Section */
-#methodology {
-    background: var(--white);
-}
-
-.method-steps {
-    display: grid;
-    gap: 48px;
-    margin-top: 64px;
-}
-
-.method-step {
-    display: grid;
-    grid-template-columns: 80px 1fr;
-    gap: 32px;
-}
-
-.step-number {
-    width: 64px;
-    height: 64px;
-    border-radius: 12px;
-    background: var(--accent-primary);
-    color: var(--white);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Space Grotesk', sans-serif;
-    font-weight: 700;
-    font-size: 24px;
-}
-
-.step-content h3 {
-    margin-bottom: 16px;
-}
-
-.step-content p {
-    color: var(--text-secondary);
-    margin-bottom: 12px;
-}
-
 /* Cases Section */
 #cases {
     background: var(--bg-primary);
@@ -1144,10 +1104,6 @@ footer p {
         gap: 32px;
     }
 
-    .method-step {
-        grid-template-columns: 1fr;
-        gap: 16px;
-    }
 
     .nav-links {
         display: none;
