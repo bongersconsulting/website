@@ -855,31 +855,6 @@ details.case-details .case-section {
     color: var(--text-secondary);
 }
 
-.about-highlights {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-    margin: 48px 0;
-}
-
-.highlight-item {
-    padding: 16px 24px;
-    background: var(--white);
-    border-radius: 8px;
-    border: 1px solid var(--border);
-}
-
-.highlight-item strong {
-    color: var(--accent-primary);
-    display: block;
-    margin-bottom: 4px;
-}
-
-.highlight-item span {
-    font-size: 15px;
-    color: var(--text-secondary);
-}
-
 .engagement-options {
     margin-top: 48px;
     padding: 32px;
