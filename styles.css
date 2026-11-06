@@ -949,6 +949,105 @@ details.case-details .case-section {
 }
 
 
+/* Contact form (light-on-dark, sits in the blue contact section) */
+.contact-form {
+    margin-top: 40px;
+    text-align: left;
+    display: grid;
+    gap: 16px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.form-field {
+    display: grid;
+    gap: 6px;
+}
+
+.form-field label {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.form-field input,
+.form-field textarea {
+    width: 100%;
+    padding: 12px 14px;
+    font: inherit;
+    font-size: 16px; /* >=16px prevents iOS zoom on focus */
+    color: var(--text-primary);
+    background: var(--white);
+    border: 2px solid transparent;
+    border-radius: 8px;
+}
+
+.form-field textarea {
+    resize: vertical;
+    min-height: 110px;
+}
+
+.form-field input:focus-visible,
+.form-field textarea:focus-visible {
+    outline: none;
+    border-color: var(--accent-orange);
+}
+
+.hp-field {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+.btn-light {
+    justify-self: center;
+    background: var(--white);
+    color: var(--accent-primary);
+    border: 2px solid var(--white);
+    cursor: pointer;
+    font: inherit;
+    font-weight: 600;
+}
+
+.btn-light:hover {
+    background: transparent;
+    color: var(--white);
+}
+
+.btn-light:disabled {
+    opacity: 0.6;
+    cursor: wait;
+}
+
+#contact .btn-light:focus-visible {
+    outline: 3px solid var(--accent-orange);
+    outline-offset: 2px;
+}
+
+.form-status {
+    min-height: 1.5em;
+    margin: 0;
+    text-align: center;
+    font-size: 15px;
+    color: var(--white);
+}
+
+.form-status.is-error {
+    color: #FED7AA;
+}
+
+@media (max-width: 480px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Footer */
 footer {
     background: var(--text-primary);

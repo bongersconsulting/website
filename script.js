@@ -69,3 +69,56 @@ document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
 
     elements.forEach(function (el) { observer.observe(el); });
 })();
+
+// Contact form: posts to Web3Forms (static-site form backend), so no email
+// address is exposed in the page source. The access key is public by design:
+// it only allows sending a message to the inbox it was registered with.
+// Get one (free) at https://web3forms.com and paste it below.
+(function () {
+    var WEB3FORMS_ACCESS_KEY = 'YOUR_WEB3FORMS_ACCESS_KEY';
+    var ENDPOINT = 'https://api.web3forms.com/submit';
+
+    var form = document.getElementById('contact-form');
+    if (!form) return;
+    var status = form.querySelector('.form-status');
+    var button = form.querySelector('button[type="submit"]');
+    var EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    function show(msg, isError) {
+        status.textContent = msg;
+        status.classList.toggle('is-error', Boolean(isError));
+    }
+
+    function isValid(data) {
+        return data.get('name').trim() && EMAIL_RE.test(data.get('email').trim()) && data.get('message').trim();
+    }
+
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var data = new FormData(form);
+
+        if (data.get('botcheck')) return; // honeypot tripped: silently drop
+        if (!isValid(data)) { show(form.dataset.msgInvalid, true); return; }
+        if (WEB3FORMS_ACCESS_KEY.indexOf('YOUR_') === 0) { show(form.dataset.msgError, true); return; }
+
+        data.append('access_key', WEB3FORMS_ACCESS_KEY);
+        data.delete('botcheck');
+        button.disabled = true;
+        show(form.dataset.msgSending, false);
+
+        fetch(ENDPOINT, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+            body: JSON.stringify(Object.fromEntries(data))
+        })
+            .then(function (res) { return res.json().then(function (body) { return res.ok && body.success; }); })
+            .then(function (ok) {
+                if (!ok) throw new Error('send failed');
+                form.reset();
+                show(form.dataset.msgSuccess, false);
+                if (window.umami) window.umami.track('contact-form-sent');
+            })
+            .catch(function () { show(form.dataset.msgError, true); })
+            .finally(function () { button.disabled = false; });
+    });
+})();
