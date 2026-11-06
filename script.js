@@ -75,7 +75,7 @@ document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
 // it only allows sending a message to the inbox it was registered with.
 // Get one (free) at https://web3forms.com and paste it below.
 (function () {
-    var WEB3FORMS_ACCESS_KEY = 'YOUR_WEB3FORMS_ACCESS_KEY';
+    var WEB3FORMS_ACCESS_KEY = '690ba897-7308-4bac-b815-5aa51b38e6de';
     var ENDPOINT = 'https://api.web3forms.com/submit';
 
     var form = document.getElementById('contact-form');
